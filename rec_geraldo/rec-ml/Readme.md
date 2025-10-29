@@ -1,11 +1,8 @@
-# 🩺 Projeto de Machine Learning Aplicado à Saúde
+# Projeto de Machine Learning Aplicado à Saúde
 
-Este projeto é referente a recuperação da disciplina de Machine Learning, com o objetivo de construir uma aplicação web interativa usando Streamlit para analisar o dataset de Câncer de Mama (Wisconsin).
+## Link do Projeto
 
-## 🚀 Links do Projeto
-
-* **Link da Aplicação (Streamlit Cloud):** `[INSIRA AQUI O LINK DO SEU APP PUBLICADO]`
-* **Link do Vídeo (YouTube/Drive):** `[INSIRA AQUI O LINK DA SUA APRESENTAÇÃO]`
+Link da Aplicação (Streamlit Cloud): `https://mlproject-rec.streamlit.app/`
 
 ---
 
@@ -48,37 +45,10 @@ A aplicação é dividida em quatro seções principais:
     * Utiliza `PCA` para reduzir as 30 características para 2 componentes principais, permitindo a visualização.
     * Compara os clusters encontrados pelo K-Means com os diagnósticos reais.
 
-## 3. Como Executar Localmente
+## 3. Conclusões e Aprendizados
 
-Para executar este projeto em sua máquina local, siga os passos:
+   * Conclusões: Consegui treinar um modelo supervisionado (Random Forest) com uma acurácia alta.
+     Mais importante, descobrimos quais características, como `worst concave points`, são as mais preditivas.
+     E o modelo não supervisionado (K-Means) confirmou que os tumores malignos e benignos são, de fato, estruturalmente diferentes nos dados, a ponto de um algoritmo "cego" conseguir separá-los.
 
-1.  **Clone o repositório:**
-    ```bash
-    git clone [URL-DO-SEU-REPOSITORIO-GITHUB]
-    cd [NOME-DA-PASTA-DO-PROJETO]
-    ```
-
-2.  **Crie um ambiente virtual (Recomendado):**
-    ```bash
-    python -m venv venv
-    source venv/bin/activate  # No Windows: venv\Scripts\activate
-    ```
-
-3.  **Instale as dependências:**
-    ```bash
-    pip install -r requirements.txt
-    ```
-
-4.  **Execute a aplicação Streamlit:**
-    ```bash
-    streamlit run app.py
-    ```
-
-## 4. Conclusões e Aprendizados
-
-*(Esta é a parte mais importante para sua avaliação!)*
-
-* **[ESCREVA AQUI O QUE VOCÊ APRENDEU]**
-* (Ex: O modelo supervisionado atingiu uma acurácia de X%, sendo as features Y e Z as mais importantes...)
-* (Ex: O K-Means com k=2 conseguiu criar grupos muito similares aos diagnósticos reais, mostrando que...)
-* (Ex: A maior dificuldade foi...)
+   * Aprendizados: Este projeto foi uma excelente prática do ciclo completo de ciência de dados: desde a carga e análise exploratória (EDA), passando pelo pré-processamento (como o StandardScaler), até o treinamento, avaliação (com Matriz de Confusão) e interpretação de      dois tipos diferentes de modelos. Utilizar o Streamlit também se mostrou incrível para criar uma interface interativa e profissional, permitindo que outras pessoas pudessem interagir com os modelos.
